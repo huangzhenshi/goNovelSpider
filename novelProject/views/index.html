@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>废墟</h3>
+
+    {{ range .list }}
+            <div>
+                <li><a href="/read?id={{ .Id }}">{{ .Title }}</a></li>
+            </div>
+    {{ end }}
+</body>
+</html>
